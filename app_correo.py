@@ -25,4 +25,4 @@ def enviar_correo(destinatarioS, asunto, cuerpo, adjunto):
 if __name__ == "__main__":
     
     enviar_correo(DESTINATARIOS, TITULO, CUERPO_CORREO, ARCHIVO)
-# %%
+
