@@ -1,6 +1,9 @@
 #%%
 import win32com.client
-from PARAMETROS import DESTINATARIOS, TITULO, CUERPO_CORREO, ARCHIVO
+import sys
+#sys.path.append(r'C:\Users\manuel.amado\Documents\Codigos_procesos') 
+#from PARAMETROS import DESTINATARIOS, TITULO, CUERPO_CORREO, ARCHIVO
+
 
 def enviar_correo(destinatarioS, asunto, cuerpo, adjunto):
     outlook = win32com.client.Dispatch("Outlook.Application")
@@ -22,7 +25,7 @@ def enviar_correo(destinatarioS, asunto, cuerpo, adjunto):
             print(f"Error al enviar correo a {destinatario}: {e}")
 
 # Ejemplo de uso
-if __name__ == "__main__":
+#if __name__ == "__main__":
     
-    enviar_correo(DESTINATARIOS, TITULO, CUERPO_CORREO, ARCHIVO)
+#    enviar_correo(DESTINATARIOS, TITULO, CUERPO_CORREO, ARCHIVO)
 
